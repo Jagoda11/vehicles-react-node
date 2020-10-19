@@ -4,10 +4,6 @@ import "./App.css";
 import VehiclesComponent from "./components/Vehicles/Vehicles";
 
 function App() {
-  fetch("http://localhost:4000/vehicles")
-    .then((res) => res.json())
-    .then((res) => console.log(res));
-
   return (
     <div className="App">
       <h1>App component</h1>

@@ -35,7 +35,7 @@ const vehicles = [
     isOnline: true,
   },
   {
-    vinNumber: "VLUR4X20009048066",
+    vinNumber: "VLUR5X20009048066",
     regNumber: "PQR678",
     owner: "Haralds Värdetransporter AB",
     ownerAddress: "Budgetvägen 1, 333 33 Uppsala",

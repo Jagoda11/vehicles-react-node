@@ -10,6 +10,8 @@ app.use( (req, res, next) => {
   next();
 })
 
+// app.use((req, res, next) => setTimeout(next, 2000));
+
 // the arrow function is not called right away, it is just defined here
 // app will call it when it gets a GET request with a path "/vehicles"
 app.get("/vehicles", (req, res) => {

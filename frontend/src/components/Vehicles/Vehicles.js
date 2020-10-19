@@ -5,8 +5,6 @@ class VehiclesComponent extends React.Component {
     super(props);
     this.state = { vehicles: [] };
     this.getVehicles();
-
-  
   }
 
   getVehicles() {
@@ -14,7 +12,7 @@ class VehiclesComponent extends React.Component {
     promise
       .then((res) => res.json())
       .then((vehicles) => {
-        this.setState({vehicles: vehicles})
+        this.setState({ vehicles: vehicles });
       }) //  if the promise is fulfilled
       .catch((err) => console.error("promise error ", err)); // if the promise is rejected
   }
@@ -27,12 +25,10 @@ class VehiclesComponent extends React.Component {
         <h2>Vehicles List</h2>
         <h2>{this.state.vehicles.length} Vehicles</h2>
         <ol>
-        {
-          this.state.vehicles.map((vehicle)=>(
+          {this.state.vehicles.map((vehicle) => (
             <li key={vehicle.vinNumber}>{vehicle.vinNumber}</li>
-          ))
-        }
-          </ol>
+          ))}
+        </ol>
       </>
     );
   }
